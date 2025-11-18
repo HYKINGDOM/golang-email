@@ -1,0 +1,5 @@
+{
+  "baseURL": "http://localhost:8080",
+  "ssePath": "/sse/tasks",
+  "chartRefreshMs": 5000
+}

@@ -1,0 +1,36 @@
+server:
+  port: 8080
+  mode: release
+  base_url: http://localhost:8080
+redis:
+  address: 192.168.5.8:6379
+  password: ""
+  db: 0
+sse:
+  base_path: /sse
+  retry_ms: 2000
+tracking:
+  pixel_path: /t/open
+  click_path: /t/click
+  enabled_default: true
+email:
+  rate_limit_interval_ms: 2000
+  jitter_ms: 1500
+  retry_times: 3
+  breaker_threshold: 3
+  breaker_cooldown_minutes: 2
+db:
+  host: 192.168.5.8
+  port: 5432
+  user: user_S5YD4z
+  password: password_bFkZC5
+  name: email_service
+  sslmode: disable
+  timezone: Asia/Shanghai
+  pool:
+    max_open: 50
+    max_idle: 25
+    conn_max_lifetime_minutes: 30
+    conn_max_idle_minutes: 10
+security:
+  secret_key: change-me-32-bytes-secret-key-change-me-32
